@@ -1,0 +1,68 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name='description', content='Te invitamos a conocer nuestro sitio, conoce los increíbles sabores que Livean te ofrece. También contamos con un increíble blog.')
+  title Blog | Livean
+  link(rel='shortcut icon', href='./favicon.png')
+  //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet', href='./css/main.css')
+  //- Global site tag (gtag.js) - Google Analytics
+  //- script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-114918432-1')
+  //- script.
+  //-   function gtag() { dataLayer.push(arguments); }
+  //-   gtag('js', new Date());
+  //-   gtag('config', 'UA-114918432-1');
+body
+  header.cabecera
+    a.logo(href='./')
+      img.logo__imagen(src='./img/comun/logo.png', alt='livean-logo')
+    #menu.botton-menu
+      span#botton-menu.botton-menu__logo
+    nav#navegacion-principal.navegacion-principal
+      ul.navegacion-principal__uno
+        li.navegacion-principal__item
+          a.navegacion-principal__link(href='./') INICIO
+        li#nosotros.navegacion-principal__item
+          a#nosotros-item.navegacion-principal__link.navegacion-principal__nosotros NOSOTROS
+          ul#submenu.navegacion-principal__dos
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./filosofia.html') Filosof&iacute;a
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./historia.html') Historia
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./modelo-negocio.html') Modelo de negocio
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./responsabilidad-social.html') Responsabilidad Social Empresarial
+        li.navegacion-principal__item: a.navegacion-principal__link(href='./productos.html') PRODUCTOS
+        li.navegacion-principal__item
+          a.navegacion-principal__link.navegacion-principal__link--activa(href='./blog.html') BLOG
+            img(src='./img/comun/lefNav.png')
+
+  main.blog
+    h2.title Blog
+      img(src='./img/comun/lefNav.png')
+
+    .blog__menu
+      .blog__item
+        p ESTILO DE VIDA
+        img.blog__imagen(src="./img/blog/estilo-vida.png", alt="")
+        img.blog__icono(src="./img/blog/estilo-vida-icono.png", alt="")
+      .blog__item
+        p BIENESTAR
+        img.blog__imagen(src="./img/blog/bienestar.png", alt="")
+        img.blog__icono(src="./img/blog/bienestar-icono.png", alt="")
+      .blog__item
+        p TENDENCIAS
+        img.blog__imagen(src="./img/blog/tendencias.png", alt="")
+        img.blog__icono(src="./img/blog/tendencias-icono.png", alt="")
+
+    .blog__division
+
+    h3.title Estilo de vida
+
+  footer.pie
+    .pie__fondo
+      #arriba.pie__arriba
+        span.slider__flecha
+    .pie__logos
+      img(src="./img/comun/grupo-nutresa-logotipo.png", width='70' alt="")
+      img(src="./img/comun/logo_tresmontes.png", width='70' alt="")
+      a.pie__privacidad(href='#') Aviso de privacidad
+  script(src='./js/main.js')

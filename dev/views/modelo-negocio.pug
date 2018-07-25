@@ -1,0 +1,86 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name='description', content='Te invitamos a conocer nuestro sitio, conoce los increíbles sabores que Livean te ofrece. También contamos con un increíble blog.')
+  title Modelo de Negocio | Livean
+  link(rel='shortcut icon', href='./favicon.png')
+  //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet', href='./css/main.css')
+  //- Global site tag (gtag.js) - Google Analytics
+  //- script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-114918432-1')
+  //- script.
+  //-   function gtag() { dataLayer.push(arguments); }
+  //-   gtag('js', new Date());
+  //-   gtag('config', 'UA-114918432-1');
+body
+  header.cabecera
+    a.logo(href='./')
+      img.logo__imagen(src='./img/comun/logo.png', alt='livean-logo')
+    #menu.botton-menu
+      span#botton-menu.botton-menu__logo
+    nav#navegacion-principal.navegacion-principal
+      ul.navegacion-principal__uno
+        li.navegacion-principal__item
+          a.navegacion-principal__link(href='./') INICIO
+        li#nosotros.navegacion-principal__item
+          a#nosotros-item.navegacion-principal__link.navegacion-principal__link--activa.navegacion-principal__nosotros NOSOTROS
+            img(src='./img/comun/lefNav.png')
+          ul#submenu.navegacion-principal__dos
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./filosofia.html') Filosof&iacute;a
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./historia.html') Historia
+            li.navegacion-principal__item: a.navegacion-principal__link.navegacion-principal__link--activa(href='./modelo-negocio.html') Modelo de negocio
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./responsabilidad-social.html') Responsabilidad Social Empresarial
+        li.navegacion-principal__item: a.navegacion-principal__link(href='./productos.html') PRODUCTOS
+        li.navegacion-principal__item: a.navegacion-principal__link(href='./blog.html') BLOG
+
+  main.modelo
+    h2.title Modelo de Negocio
+    p.texto Nuestro modelo de negocio está diseñado para conseguir un desarrollo sustentable.
+    .division
+      .division__amarilla
+      .division__azul
+
+    .modelo__contenedor
+      h2.modelo__titulo Para ti
+        img.modelo__imagen.modelo__imagen--1(src='./img/comun/lefNav.png')
+      .modelo__contenido
+        img.modelo__imagen.modelo__imagen--2(src='./img/comun/lefNav.png')
+        h3.modelo__contenido--titulo CONSUMIDOR
+        p.modelo__contenido--texto El centro de todo lo que hacemos
+        h3.modelo__contenido--titulo CLIENTE
+        p.modelo__contenido--texto Socio en la generación de valor
+        h3.modelo__contenido--titulo ACCIONISTA
+        p.modelo__contenido--texto Respaldo e impulsor del crecimiento
+      .circulo
+      h2.modelo__titulo.modelo__titulo--mejor Lo mejor
+      .modelo__contenido
+        img.modelo__imagen.modelo__imagen--3(src='./img/comun/lefNav.png')
+        h3.modelo__contenido--titulo PERSONAS
+        p.modelo__contenido--texto Apasionadas y comprometidas en nuestra misión
+        h3.modelo__contenido--titulo MARCAS
+        p.modelo__contenido--texto Valiosas y relevantes en la vida de las personas
+        h3.modelo__contenido--titulo PRODUCTOS
+        p.modelo__contenido--texto De excelente calidad, beneficios, saludables y accesibles
+      .circulo
+      h2.modelo__titulo.modelo__titulo--siempre Siempre
+      .modelo__contenido
+        img.modelo__imagen.modelo__imagen--4(src='./img/comun/lefNav.png')
+        h3.modelo__contenido--titulo TRAYECTORIA
+        p.modelo__contenido--texto Legado de emprendimiento
+        h3.modelo__contenido--titulo INOVACIÓN
+        p.modelo__contenido--texto Prioridad en el apoyo a las marcas
+
+    .modelo__contenedor--largo
+      img(src='./img/modelo-negocio/modelo-negocio-1.png', alt='')
+      img(src='./img/modelo-negocio/modelo-negocio-2.png', alt='')
+      img(src='./img/modelo-negocio/modelo-negocio-3.png', alt='')
+  footer.pie
+    .pie__fondo
+      #arriba.pie__arriba
+        span.slider__flecha
+    .pie__logos
+      img(src='./img/comun/grupo-nutresa-logotipo.png', width='70' alt='')
+      img(src='./img/comun/logo_tresmontes.png', width='70' alt='')
+      a.pie__privacidad(href='#') Aviso de privacidad
+  script(src='./js/main.js')

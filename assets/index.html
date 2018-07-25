@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Te invitamos a conocer nuestro sitio, conoce los increíbles sabores que Livean te ofrece. También contamos con un increíble blog.">
+  <title>Inicio | Livean</title>
+  <link rel="shortcut icon" href="./favicon.png">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="cabecera"><a class="logo" href="./"><img class="logo__imagen" src="./img/comun/logo.png" alt="livean-logo"></a>
+    <div class="botton-menu" id="menu"><span class="botton-menu__logo" id="botton-menu"></span></div>
+    <nav class="navegacion-principal" id="navegacion-principal">
+      <ul class="navegacion-principal__uno">
+        <li class="navegacion-principal__item"><a class="navegacion-principal__link navegacion-principal__link--activa" href="./">INICIO<img src="./img/comun/lefNav.png"></a></li>
+        <li class="navegacion-principal__item" id="nosotros"><a class="navegacion-principal__link navegacion-principal__nosotros" id="nosotros-item">NOSOTROS</a>
+          <ul class="navegacion-principal__dos" id="submenu">
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./filosofia.html">Filosof&iacute;a</a></li>
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./historia.html">Historia</a></li>
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./modelo-negocio.html">Modelo de negocio</a></li>
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./responsabilidad-social.html">Responsabilidad Social Empresarial</a></li>
+          </ul>
+        </li>
+        <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./productos.html">PRODUCTOS</a></li>
+        <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./blog.html">BLOG</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="home contenedor"><img class="pleca-arriba" src="./img/comun/plecaarriba.png">
+    <div class="slider">
+      <div class="slider__imagenes">
+        <div class="slider__imagen" style="left: -100%"><img src="./img/home/home1.jpg"></div>
+        <div class="slider__imagen" style="left: 0"><img src="./img/home/home2.jpg"></div>
+        <div class="slider__imagen" style="left: 100%"><img src="./img/home/home1.jpg"></div>
+        <div class="slider__imagen" style="left: 200%"><img src="./img/home/home2.jpg"></div>
+      </div>
+      <div class="slider__siguiente" id="botton-slider"><span class="slider__flecha"></span></div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+</body>

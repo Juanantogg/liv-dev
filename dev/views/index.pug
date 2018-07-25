@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name='description', content='Te invitamos a conocer nuestro sitio, conoce los increíbles sabores que Livean te ofrece. También contamos con un increíble blog.')
+  title Inicio | Livean
+  link(rel='shortcut icon', href='./favicon.png')
+  //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet', href='./css/main.css')
+  //- Global site tag (gtag.js) - Google Analytics
+  //- script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-114918432-1')
+  //- script.
+  //-   function gtag() { dataLayer.push(arguments); }
+  //-   gtag('js', new Date());
+  //-   gtag('config', 'UA-114918432-1');
+body
+  header.cabecera
+    a.logo(href='./')
+      img.logo__imagen(src='./img/comun/logo.png', alt='livean-logo')
+    #menu.botton-menu
+      span#botton-menu.botton-menu__logo
+    nav#navegacion-principal.navegacion-principal
+      ul.navegacion-principal__uno
+        li.navegacion-principal__item
+          a.navegacion-principal__link.navegacion-principal__link--activa(href='./') INICIO
+            img(src='./img/comun/lefNav.png')
+        li#nosotros.navegacion-principal__item
+          a#nosotros-item.navegacion-principal__link.navegacion-principal__nosotros NOSOTROS
+          ul#submenu.navegacion-principal__dos
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./filosofia.html') Filosof&iacute;a
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./historia.html') Historia
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./modelo-negocio.html') Modelo de negocio
+            li.navegacion-principal__item: a.navegacion-principal__link(href='./responsabilidad-social.html') Responsabilidad Social Empresarial
+        li.navegacion-principal__item: a.navegacion-principal__link(href='./productos.html') PRODUCTOS
+        li.navegacion-principal__item: a.navegacion-principal__link(href='./blog.html') BLOG
+  main.home.contenedor
+    img.pleca-arriba(src='./img/comun/plecaarriba.png')
+    .slider
+      .slider__imagenes
+        .slider__imagen(style='left: -100%')
+          img(src='./img/home/home1.jpg')
+        .slider__imagen(style='left: 0')
+          img(src='./img/home/home2.jpg')
+        .slider__imagen(style='left: 100%')
+          img(src='./img/home/home1.jpg')
+        .slider__imagen(style='left: 200%')
+          img(src='./img/home/home2.jpg')
+      #botton-slider.slider__siguiente
+        span.slider__flecha
+  script(src='./js/main.js')
