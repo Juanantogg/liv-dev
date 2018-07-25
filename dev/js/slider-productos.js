@@ -1,4 +1,7 @@
-if (window.location.pathname.includes('productos')) {
+if (window.location.pathname.includes('productos') ||
+    window.location.pathname === '/prueba-liv/' ||
+    window.location.pathname === '/') {
+  // const bottonSlider = document.getElementById('botton-slider')
   const productos = Array.from(document.getElementsByClassName('slider-productos__imagen'))
   const anterior = document.getElementById('boton-anterior')
   const siguiente = document.getElementById('boton-siguiente')

@@ -249,6 +249,10 @@ body {
   position: relative;
   width: 100%;
   height: calc(100vh - 189px);
+  .slider-productos {
+    height: 100%;
+    max-width: 100%;
+  }
 }
 .pleca-arriba {
   width: 100%;

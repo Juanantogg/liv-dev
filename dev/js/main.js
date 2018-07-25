@@ -5,9 +5,9 @@ const navegacionPrincipal = document.getElementById('navegacion-principal')
 const submenu = document.getElementById('submenu')
 const nosotros = document.getElementById('nosotros')
 const nosotrosItem = document.getElementById('nosotros-item')
-const imagenSlider = document.querySelectorAll('.slider__imagen')
-let arraySlider = Array.from(imagenSlider)
-const bottonSlider = document.getElementById('botton-slider')
+// const imagenSlider = document.querySelectorAll('.slider__imagen')
+// let arraySlider = Array.from(imagenSlider)
+// const bottonSlider = document.getElementById('botton-slider')
 const arriba = document.getElementById('arriba')
 const acordeon = document.getElementsByClassName('responsabilidad__acordeon')
 const responsabilidadContenido = document.getElementsByClassName('responsabilidad__contenido')
@@ -27,40 +27,40 @@ const expandirSubmenu = () => {
   submenu.classList.toggle('navegacion-principal__dos--extendida')
 }
 
-const animacionSlide = () => {
-  if (window.location.pathname === '/') {
-    arraySlider.forEach((imagen, index) => {
-      imagen.style.left = `${(index - 1) * 100}%`
-      if (imagen.style.left === '0%') {
-        imagen.style.zIndex = '10'
-      }
-      if (imagen.style.left === '200%') {
-        imagen.style.zIndex = '-10'
-      }
-    })
-  }
-}
+// const animacionSlide = () => {
+//   if (window.location.pathname === '/') {
+//     arraySlider.forEach((imagen, index) => {
+//       imagen.style.left = `${(index - 1) * 100}%`
+//       if (imagen.style.left === '0%') {
+//         imagen.style.zIndex = '10'
+//       }
+//       if (imagen.style.left === '200%') {
+//         imagen.style.zIndex = '-10'
+//       }
+//     })
+//   }
+// }
 
-let intervaloSlider = setInterval(() => {
-  let primerImagen = arraySlider.shift()
-  arraySlider.push(primerImagen)
-  animacionSlide()
-}, 5000)
+// let intervaloSlider = setInterval(() => {
+//   let primerImagen = arraySlider.shift()
+//   arraySlider.push(primerImagen)
+//   animacionSlide()
+// }, 5000)
 
-const cambiarImagen = () => {
-  clearInterval(intervaloSlider)
-  let intervaloSlider1 = setInterval(() => {
-    let primerImagen = arraySlider.shift()
-    arraySlider.push(primerImagen)
-    animacionSlide()
-    clearInterval(intervaloSlider1)
-  }, 100)
-  intervaloSlider = setInterval(() => {
-    let primerImagen = arraySlider.shift()
-    arraySlider.push(primerImagen)
-    animacionSlide()
-  }, 5000)
-}
+// const cambiarImagen = () => {
+//   clearInterval(intervaloSlider)
+//   let intervaloSlider1 = setInterval(() => {
+//     let primerImagen = arraySlider.shift()
+//     arraySlider.push(primerImagen)
+//     animacionSlide()
+//     clearInterval(intervaloSlider1)
+//   }, 100)
+//   intervaloSlider = setInterval(() => {
+//     let primerImagen = arraySlider.shift()
+//     arraySlider.push(primerImagen)
+//     animacionSlide()
+//   }, 5000)
+// }
 
 const subir = () => {
   let scrollStep = -window.scrollY / (500 / 3)
@@ -130,7 +130,7 @@ const mostrarFase = (index) => {
 
 menu.addEventListener('click', () => expandirMenu())
 nosotros.addEventListener('click', () => expandirSubmenu())
-if (bottonSlider) bottonSlider.addEventListener('click', () => cambiarImagen())
+// if (bottonSlider) bottonSlider.addEventListener('click', () => cambiarImagen())
 if (acordeon) Array.from(acordeon).forEach((fase, index) => fase.addEventListener('click', () => mostrarFase(index)))
 window.addEventListener('scroll', () => mostrarBotonArriba())
 if (arriba) arriba.addEventListener('click', () => subir())
